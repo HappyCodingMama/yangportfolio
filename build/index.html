@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- animate on scroll css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar__row">
+          <div class="logo" data-aos="fade-in-left" data-aos-delay="150">
+            <a href="index.html">Portfolio</a>
+          </div>
+
+          <div class="menu">
+            <div class="tooltip">
+              <input
+                type="text"
+                onclick="myFunction()"
+                onmouseout="outFunc()"
+                value="studwing@hotmail.com"
+                id="myInput"
+              />
+              <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- About me -->
+    <section class="aboutme section" id="aboutme">
+      <div class="aboutme__container container">
+        <div class="aboutme__texts">
+          <p class="aboutme__text" data-aos="fade-up" data-aos-delay="150">
+            <b>I am Yang Jung,</b> a self taught web developer.
+          </p>
+          <p class="aboutme__subtext" data-aos="fade-up" data-aos-delay="300">
+            I am a problem solver and a team worker, passionate about progress
+            and a productivity addict. I ready to learn new technology and hope
+            to work on ambitious projects with positive people. and a
+            productivity addict. I ready to learn new technology and hope to
+            work on ambitious projects with positive people.
+          </p>
+        </div>
+        <a
+          href="https://drive.google.com/file/d/1AzHvM6DR6WUaJ1-wWW0B2i8cPG_2QzvI/view"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-aos="fade-up"
+          data-aos-delay="450"
+        >
+          <button class="aboutme__resume btn">Resume</button></a
+        >
+      </div>
+    </section>
+    <!-- qualification -->
+    <section class="qualification section" id="qualification">
+      <h2 class="section__title" data-aos="fade-in-left" data-aos-delay="150">
+        Qualification_
+      </h2>
+
+      <div class="qualification__container container">
+        <div class="education" data-aos="fade-right" data-aos-delay="300">
+          <h3 class="qualification__title">Education</h3>
+
+          <div class="timeline">
+            <div class="timeline__item">
+              <div class="circle__dot"></div>
+              <h3 class="timeline__title">Bachelor of Multimedia Degree</h3>
+
+              <span class="timeline__date">2005 - 2009</span>
+            </div>
+
+            <div class="timeline__item">
+              <div class="circle__dot"></div>
+              <h3 class="timeline__title">
+                Associate of Computer Graphics Degree
+              </h3>
+
+              <span class="timeline__date">2002 - 2004</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience" data-aos="fade-left" data-aos-delay="450">
+          <h3 class="qualification__title">Experience</h3>
+
+          <div class="timeline">
+            <div class="timeline__item">
+              <div class="circle__dot"></div>
+              <h3 class="timeline__title">CJ EnM</h3>
+
+              <span class="timeline__date">2010 - 2020</span>
+              <p class="timeline__text">
+                Motion graphics designer | Assistant manager
+              </p>
+            </div>
+
+            <div class="timeline__item">
+              <div class="circle__dot"></div>
+              <h3 class="timeline__title">FOX Network Korea</h3>
+
+              <span class="timeline__date">2006 - 2009</span>
+              <p class="timeline__text">Motion graphics designer</p>
+            </div>
+
+            <div class="timeline__item">
+              <div class="circle__dot"></div>
+              <h3 class="timeline__title">CJ Media</h3>
+
+              <span class="timeline__date">2005 - 2006</span>
+              <p class="timeline__text">Intern</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2
+        class="section__title skills"
+        data-aos="fade-in-left"
+        data-aos-delay="150"
+      >
+        Skills_
+      </h2>
+      <div class="qualification__container container">
+        <div
+          class="qualification__skills"
+          data-aos="fade-right"
+          data-aos-delay="300"
+        >
+          <div class="qualification__title">WEB DEVELOPMENT</div>
+          <div class="skills__items">
+            <div class="timeline__item">
+              <div class="circle__dot"></div>
+              <h3 class="timeline__title">Programming</h3>
+              <p class="skills__text">
+                HTML | CSS | JavaScript | React | Sass | MySQL
+              </p>
+            </div>
+            <div class="timeline__item">
+              <div class="circle__dot"></div>
+              <h3 class="timeline__title">UI/UX</h3>
+              <p class="skills__text">Figma | XD</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="qualification__skills"
+          data-aos="fade-left"
+          data-aos-delay="450"
+        >
+          <div class="qualification__title">MOTION GRAPHICS</div>
+          <div class="skills__items">
+            <div class="timeline__item">
+              <div class="circle__dot"></div>
+              <h3 class="timeline__title">Graphic Design</h3>
+              <p class="skills__text">Photoshop | Illustrator</p>
+            </div>
+
+            <div class="timeline__item">
+              <div class="circle__dot"></div>
+              <h3 class="timeline__title">Editing & Animating</h3>
+              <p class="skills__text">AfterEffects | Premiere</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- work -->
+    <section class="work section" id="work">
+      <h2 class="section__title" data-aos="fade-in-left" data-aos-delay="300">
+        Featured Projects_
+      </h2>
+      <!-- Featured-1 -->
+      <div class="work__featured_container container grid featured">
+        <div
+          class="featured_work__card"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/simple-portfolio-84dc6.appspot.com/o/thumbnail_uiux_001.jpg?alt=media&token=2796e89a-1197-44ea-b182-e0bd876a39b2"
+            alt=""
+            class="work__img"
+            onclick="showModal()"
+          />
+
+          <div class="work__items">
+            <h3 class="work__title">Cartier</h3>
+            <span class="work__button">UI/UX</span>
+            <div class="portfolio__item-details">
+              <div class="item-details">
+                <div class="item-title">
+                  <p class="details__description">
+                    Redesign of Cartier website to strengthen their brand
+                    identity
+                  </p>
+                </div>
+              </div>
+              <div class="details__info">
+                <span>XD, Photoshop</span>
+                <span>UI/UX</span>
+              </div>
+            </div>
+            <div class="pp__details_img">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/simple-portfolio-84dc6.appspot.com/o/popup_uiux_001_01.jpg?alt=media&token=784355bc-6c75-44d8-a11d-e8eb98a5c07f"
+                alt=""
+                class="portfolio__detail-img"
+              />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/simple-portfolio-84dc6.appspot.com/o/popup_uiux_001_02.jpg?alt=media&token=eda5b1d7-e217-4f3c-adf4-5d24d7fc1317"
+                alt=""
+                class="portfolio__detail-img"
+              />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/simple-portfolio-84dc6.appspot.com/o/popup_uiux_001_03.jpg?alt=media&token=1e9b2bd1-54b1-4780-9c2f-8b96fa82ac18"
+                alt=""
+                class="portfolio__detail-img"
+              />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/simple-portfolio-84dc6.appspot.com/o/popup_uiux_001_04.jpg?alt=media&token=ab80006f-3b16-4fbd-81a1-31a6a5eafed6"
+                alt=""
+                class="portfolio__detail-img"
+              />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/simple-portfolio-84dc6.appspot.com/o/popup_uiux_001_05.jpg?alt=media&token=1181d859-43b2-4903-b9ad-2f912f81d6e2"
+                alt=""
+                class="portfolio__detail-img"
+              />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/simple-portfolio-84dc6.appspot.com/o/popup_uiux_001_06.jpg?alt=media&token=be11da18-ee5b-4e58-a329-7bf7ca1f3926"
+                alt=""
+                class="portfolio__detail-img"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Featured-2 -->
+        <div
+          class="featured_work__card"
+          data-aos="fade-up"
+          data-aos-delay="450"
+        >
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/simple-portfolio-84dc6.appspot.com/o/thumbnail_website_001.jpg?alt=media&token=debe8b7d-b954-47f5-b38c-7b8984f4e55c"
+            alt=""
+            class="work__img"
+            onclick="showModal()"
+          />
+
+          <div class="work__items">
+            <h3 class="work__title">Personal Portfolio</h3>
+            <span class="work__button">Website</span>
+            <div class="portfolio__item-details">
+              <div class="item-details">
+                <div class="item-title">
+                  <p class="details__description">
+                    A single page portfolio web platform that would showcase all
+                    of works
+                  </p>
+                </div>
+              </div>
+              <div class="details__info">
+                <span>React JS</span>
+                <div class="details__links">
+                  <a
+                    href="https://github.com/HappyCodingMama/dev_portfolio_template"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="Link"
+                    >Repo |</a
+                  >
+                  <a
+                    href="https://dev-portfolio-template.onrender.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="Link"
+                    >Demo</a
+                  >
+                </div>
+              </div>
+              <div class="references">
+                <small>References</small>
+                <span>Web Development : https://youtu.be/G-Cr00UYokU</span>
+              </div>
+            </div>
+            <div class="pp__details_img">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/simple-portfolio-84dc6.appspot.com/o/popup_website_001_01.jpg?alt=media&token=64b4a636-77db-47cb-8a60-1300efe5be83"
+                alt=""
+                class="portfolio__detail-img"
+              />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/simple-portfolio-84dc6.appspot.com/o/popup_website_001_02.jpg?alt=media&token=66499101-8fda-4ec2-a466-b3230b91d182"
+                alt=""
+                class="portfolio__detail-img"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Featured-3 -->
+        <div
+          class="featured_work__card"
+          data-aos="fade-up"
+          data-aos-delay="600"
+        >
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/simple-portfolio-84dc6.appspot.com/o/thumbnail_webapp_002.jpg?alt=media&token=b49cc16d-6cc6-4376-9ef2-61c4f0af6841"
+            alt=""
+            class="work__img"
+            onclick="showModal()"
+          />
+
+          <div class="work__items">
+            <h3 class="work__title">Booking Website</h3>
+            <span class="work__button">Web App</span>
+            <div class="portfolio__item-details">
+              <div class="item-details">
+                <div class="item-title">
+                  <p class="details__description">
+                    Find the information visitors need to make the right
+                    decisions on hotels
+                  </p>
+                </div>
+              </div>
+              <div class="details__info">
+                <span>Simple HTML/CSS/JavaScript Website</span>
+                <div class="details__links">
+                  <a
+                    href="https://github.com/HappyCodingMama/jstravelbooking"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="Link"
+                    >Repo |</a
+                  >
+                  <a
+                    href="https://jstravelbooking.onrender.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="Link"
+                    >Demo</a
+                  >
+                </div>
+              </div>
+              <div class="references">
+                <small>References</small>
+                <span>Web Development : https://youtu.be/k3Vfj-e1Ma4</span>
+                <small>Tools</small>
+                <span>MongoDB, Postman (for testing API)</span>
+                <small>Libraries</small>
+                <span
+                  >express, nodemon, mongoose (for backend) / react-date-range
+                  (for choosing dates)</span
+                >
+              </div>
+            </div>
+            <div class="pp__details_img">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/simple-portfolio-84dc6.appspot.com/o/popup_webapp_001_01.jpg?alt=media&token=2c322fcd-92cd-4ec0-ab6e-ed8b51ec04a3"
+                alt=""
+                class="portfolio__detail-img"
+              />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/simple-portfolio-84dc6.appspot.com/o/popup_webapp_001_02.jpg?alt=media&token=8eeb1791-06fb-4a4c-9087-0e375a35b560"
+                alt=""
+                class="portfolio__detail-img"
+              />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/simple-portfolio-84dc6.appspot.com/o/popup_webapp_001_03.jpg?alt=media&token=21bd64f2-8ef1-460f-82b8-b4367b7750ad"
+                alt=""
+                class="portfolio__detail-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="section__title" data-aos="fade-in-left" data-aos-delay="150">
+        Other Projects_
+      </h2>
+      <div
+        class="work__filters"
+        id="buttons"
+        data-aos="zoom-in-left"
+        data-aos-delay="300"
+      >
+        <span class="work__item active-work" onclick="filterObjects('all')"
+          >All</span
+        >
+        <span class="work__item" onclick="filterObjects('uiux')">UI/UX</span>
+        <span class="work__item" onclick="filterObjects('website')"
+          >WEBSITE</span
+        >
+        <spa class="work__item" onclick="filterObjects('webapp')">WEB APP</spa>
+      </div>
+
+      <div class="work__container container grid">
+        <!-- 1 -->
+        <div class="work__card uiux" data-aos="fade-up" data-aos-delay="450">
+          <img
+            src="assets/img/thumbnail_uiux_001.jpg"
+            alt=""
+            class="work__img"
+            onclick="showModal()"
+          />
+          <div class="work__items">
+            <h3 class="work__title">Cartier</h3>
+            <span class="work__button">UI/UX</span>
+            <div class="portfolio__item-details">
+              <div class="item-details">
+                <div class="item-title">
+                  <p class="details__description">
+                    Redesign of Cartier website to strengthen their brand
+                    identity
+                  </p>
+                </div>
+              </div>
+              <div class="details__info">
+                <span>XD, Photoshop</span>
+                <span>External Link</span>
+              </div>
+            </div>
+            <div class="pp__details_img">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/simple-portfolio-84dc6.appspot.com/o/popup_uiux_001_01.jpg?alt=media&token=784355bc-6c75-44d8-a11d-e8eb98a5c07f"
+                alt=""
+                class="portfolio__detail-img"
+              />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/simple-portfolio-84dc6.appspot.com/o/popup_uiux_001_02.jpg?alt=media&token=eda5b1d7-e217-4f3c-adf4-5d24d7fc1317"
+                alt=""
+                class="portfolio__detail-img"
+              />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/simple-portfolio-84dc6.appspot.com/o/popup_uiux_001_03.jpg?alt=media&token=1e9b2bd1-54b1-4780-9c2f-8b96fa82ac18"
+                alt=""
+                class="portfolio__detail-img"
+              />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/simple-portfolio-84dc6.appspot.com/o/popup_uiux_001_04.jpg?alt=media&token=ab80006f-3b16-4fbd-81a1-31a6a5eafed6"
+                alt=""
+                class="portfolio__detail-img"
+              />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/simple-portfolio-84dc6.appspot.com/o/popup_uiux_001_05.jpg?alt=media&token=1181d859-43b2-4903-b9ad-2f912f81d6e2"
+                alt=""
+                class="portfolio__detail-img"
+              />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/simple-portfolio-84dc6.appspot.com/o/popup_uiux_001_06.jpg?alt=media&token=be11da18-ee5b-4e58-a329-7bf7ca1f3926"
+                alt=""
+                class="portfolio__detail-img"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="work__card website" data-aos="fade-up" data-aos-delay="600">
+          <img
+            src="assets/img/thumbnail_website_001.jpg"
+            alt=""
+            class="work__img"
+            onclick="showModal()"
+          />
+          <div class="work__items">
+            <h3 class="work__title">Personal Portfolio</h3>
+            <span class="work__button">Website</span>
+            <div class="portfolio__item-details">
+              <div class="item-details">
+                <div class="item-title">
+                  <p class="details__description">
+                    A single page portfolio web platform that would showcase all
+                    of works
+                  </p>
+                </div>
+              </div>
+              <div class="details__info">
+                <span>React JS</span>
+                <a
+                  href="https://dev-portfolio-template.onrender.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="externalLink"
+                  >External Link</a
+                >
+              </div>
+              <div class="references">
+                <small>References</small>
+                <span>Web Development : https://youtu.be/G-Cr00UYokU</span>
+              </div>
+            </div>
+            <div class="pp__details_img">
+              <img
+                src="assets/img/popup_uiux_001.jpg"
+                alt=""
+                class="portfolio__detail-img"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="work__card webapp" data-aos="fade-up" data-aos-delay="750">
+          <img
+            src="assets/img/thumbnail_webapp_002.jpg"
+            alt=""
+            class="work__img"
+            onclick="showModal()"
+          />
+          <div class="work__items">
+            <h3 class="work__title">Booking Website</h3>
+            <span class="work__button">Web App</span>
+            <div class="portfolio__item-details">
+              <div class="item-details">
+                <div class="item-title">
+                  <p class="details__description">
+                    Find the information visitors need to make the right
+                    decisions on hotels
+                  </p>
+                </div>
+              </div>
+              <div class="details__info">
+                <span>Simple HTML/CSS/JavaScript Website</span>
+                <a
+                  href="https://jstravelbooking.onrender.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="externalLink"
+                  >External Link</a
+                >
+              </div>
+              <div class="references">
+                <small>References</small>
+                <span>Web Development : https://youtu.be/k3Vfj-e1Ma4</span>
+                <small>Tools</small>
+                <span>MongoDB, Postman (for testing API)</span>
+                <small>Libraries</small>
+                <span
+                  >express, nodemon, mongoose (for backend) / react-date-range
+                  (for choosing dates)</span
+                >
+              </div>
+            </div>
+            <div class="pp__details_img">
+              <img
+                src="assets/img/popup_uiux_001.jpg"
+                alt=""
+                class="portfolio__detail-img"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="work__card website" data-aos="fade-up" data-aos-delay="900">
+          <img
+            src="assets/img/thumbnail_webapp_001.jpg"
+            alt=""
+            class="work__img"
+            onclick="showModal()"
+          />
+          <div class="work__items">
+            <h3 class="work__title">Film Search</h3>
+            <span class="work__button">Web App</span>
+            <div class="portfolio__item-details">
+              <div class="item-details">
+                <div class="item-title">
+                  <p class="details__description">
+                    Find ratings and reviews for the newest movie and TV shows
+                  </p>
+                </div>
+              </div>
+              <div class="details__info">
+                <span>ver.01 React JS | ver.02 Vanila JavaScript</span>
+                <span>External Link ver.01 | ver.02</span>
+              </div>
+              <div class="references">
+                <small>References</small>
+                <span>https://www.youtube.com/watch?v=FoD33gwhu00</span>
+
+                <span>https://www.youtube.com/watch?v=dyGO7vQw3xM</span>
+                <span> All data is coming from TMDB API.</span>
+
+                <small>Libraries</small>
+                <span>express, nodemon, swiper JS</span>
+              </div>
+            </div>
+            <div class="pp__details_img">
+              <img
+                src="assets/img/popup_uiux_001.jpg"
+                alt=""
+                class="portfolio__detail-img"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="work__card webapp" data-aos="fade-up" data-aos-delay="1050">
+          <img
+            src="assets/img/thumbnail_webapp_003.jpg"
+            alt=""
+            class="work__img"
+            onclick="showModal()"
+          />
+          <div class="work__items">
+            <h3 class="work__title">Social Media</h3>
+            <span class="work__button">Web App</span>
+            <div class="portfolio__item-details">
+              <div class="item-details">
+                <div class="item-title">
+                  <p class="details__description">
+                    Social networks to connect people through photos, videos,
+                    documents or other items
+                  </p>
+                </div>
+              </div>
+              <div class="details__info">
+                <span
+                  >ReactJS,Sass,MySQL | responsive UI & darkㆍlight mode</span
+                >
+                <span>External Link</span>
+              </div>
+              <div class="references">
+                <small>References</small>
+                <span>https://youtu.be/1EuNnZEp2sQ</span>
+
+                <small>Tools</small>
+                <span>MongoDB, Postman (for testing API)</span>
+                <small>Libraries</small>
+                <span
+                  >express, nodemon, mongoose (for backend) / react-date-range
+                  (for choosing dates)</span
+                >
+              </div>
+            </div>
+            <div class="pp__details_img">
+              <img
+                src="assets/img/popup_uiux_001.jpg"
+                alt=""
+                class="portfolio__detail-img"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="work__card uiux" data-aos="fade-up" data-aos-delay="1300">
+          <img
+            src="assets/img/thumbnail_webapp_004.jpg"
+            alt=""
+            class="work__img"
+            onclick="showModal()"
+          />
+          <div class="work__items">
+            <h3 class="work__title">Admin Dashboard</h3>
+            <span class="work__button">UI/UX</span>
+            <div class="portfolio__item-details">
+              <div class="item-details">
+                <div class="item-title">
+                  <p class="details__description">
+                    A responsive admin dashboard with light and dark mode theme
+                    functionality
+                  </p>
+                </div>
+              </div>
+              <div class="details__info">
+                <span>HtmlㆍCSSㆍJavascript</span>
+                <span>External Link</span>
+              </div>
+            </div>
+            <div class="pp__details_img">
+              <img
+                src="assets/img/thumbnail_webapp_004.jpg"
+                alt=""
+                class="portfolio__detail-img"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- 7 -->
+        <div class="work__card uiux" data-aos="fade-up" data-aos-delay="1450">
+          <img
+            src="assets/img/thumbnail_webapp_004.jpg"
+            alt=""
+            class="work__img"
+            onclick="showModal()"
+          />
+          <div class="work__items">
+            <h3 class="work__title">E-Commerce</h3>
+            <span class="work__button">Web App</span>
+            <div class="portfolio__item-details">
+              <div class="item-details">
+                <div class="item-title">
+                  <p class="details__description">
+                    A responsive admin dashboard with light and dark mode theme
+                    functionality
+                  </p>
+                </div>
+              </div>
+              <div class="details__info">
+                <span>HtmlㆍCSSㆍJavascript</span>
+                <span>External Link</span>
+              </div>
+            </div>
+            <div class="pp__details_img">
+              <img
+                src="assets/img/thumbnail_webapp_004.jpg"
+                alt=""
+                class="portfolio__detail-img"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="work__card uiux" data-aos="fade-up" data-aos-delay="1600">
+          <img
+            src="assets/img/thumbnail_webapp_004.jpg"
+            alt=""
+            class="work__img"
+            onclick="showModal()"
+          />
+          <div class="work__items">
+            <h3 class="work__title">Booking System</h3>
+            <span class="work__button">UI/UX</span>
+            <div class="portfolio__item-details">
+              <div class="item-details">
+                <div class="item-title">
+                  <p class="details__description">
+                    A responsive admin dashboard with light and dark mode theme
+                    functionality
+                  </p>
+                </div>
+              </div>
+              <div class="details__info">
+                <span>HtmlㆍCSSㆍJavascript</span>
+                <span>External Link</span>
+              </div>
+            </div>
+            <div class="pp__details_img">
+              <img
+                src="assets/img/thumbnail_webapp_004.jpg"
+                alt=""
+                class="portfolio__detail-img"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="work__card uiux" data-aos="fade-up" data-aos-delay="1600">
+          <img
+            src="assets/img/thumbnail_webapp_004.jpg"
+            alt=""
+            class="work__img"
+            onclick="showModal()"
+          />
+          <div class="work__items">
+            <h3 class="work__title">Landing Page</h3>
+            <span class="work__button">UI/UX</span>
+            <div class="portfolio__item-details">
+              <div class="item-details">
+                <div class="item-title">
+                  <p class="details__description">
+                    A responsive admin dashboard with light and dark mode theme
+                    functionality
+                  </p>
+                </div>
+              </div>
+              <div class="details__info">
+                <span>HtmlㆍCSSㆍJavascript</span>
+                <span>External Link</span>
+              </div>
+            </div>
+            <div class="pp__details_img">
+              <img
+                src="assets/img/thumbnail_webapp_004.jpg"
+                alt=""
+                class="portfolio__detail-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- popup -->
+    <div class="portfolio__popup" id="modal">
+      <div class="portfolio__popup-inner">
+        <div class="portfolio__popup-content grid">
+          <span class="portfolio__popup-close" onclick="showModal()">X</span>
+
+          <div class="portfolio__popup-info">
+            <div class="portfolio__popup-subtitle">
+              <span>UIUX</span>
+            </div>
+            <div class="portfolio__popup-body">
+              <h3 class="details__title">Cartier</h3>
+              <p class="details__description">
+                Redesign of Cartier website to strengthen the brand identity
+              </p>
+              <ul class="details__info">
+                <li>Created |<span>2021</span></li>
+                <li>Languages |<span> N/S</span></li>
+                <li>Tools |<span>XD Photoshop</span></li>
+                <li>View |<span>Full Screen</span></li>
+              </ul>
+            </div>
+            <div class="pp__thumbnail">
+              <img
+                src="assets/img/popup_uiux_001.jpg"
+                alt=""
+                class="portfolio__popup-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__items">
+        <span>Designed & Built by Yang </span>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+
+    <!-- animate on scroll js-->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        offset: 150,
+      });
+    </script>
+  </body>
+</html>
